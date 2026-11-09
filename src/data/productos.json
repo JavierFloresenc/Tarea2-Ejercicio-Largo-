@@ -5,9 +5,30 @@
     "categoria": "Investigación",
     "precio": 350,
     "nuevo": false,
+    "destacado": true,
     "disponible": true,
+    "nivel": "Pregrado y Posgrado",
+    "horas": 40,
     "imagen": "/favicon.svg",
-    "descripcion": "Acompañamiento metodológico personalizado desde el planteamiento del problema hasta la sustentación final."
+    "descripcion": "Acompañamiento metodológico personalizado desde el planteamiento del problema hasta la sustentación final ante jurado.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Proyecto de Tesis",
+        "temas": [
+          "Planteamiento y formulación del problema",
+          "Marco teórico y antecedentes",
+          "Matriz de consistencia y operacionalización"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Informe Final y Sustentación",
+        "temas": [
+          "Resultados y discusión",
+          "Conclusiones y recomendaciones",
+          "Preparación de diapositivas y defensa oral"
+        ]
+      }
+    ]
   },
   {
     "id": 2,
@@ -15,29 +36,92 @@
     "categoria": "Publicación Científica",
     "precio": 480,
     "nuevo": true,
+    "destacado": true,
     "disponible": true,
+    "nivel": "Avanzado / Investigadores",
+    "horas": 35,
     "imagen": "/favicon.svg",
-    "descripcion": "Redacción científica, adaptación a revistas indexadas (Scopus/WoS) y levantamiento de observaciones de pares."
+    "descripcion": "Redacción científica de alto impacto, adaptación a revistas indexadas en Scopus y Web of Sciencey levantamiento de observaciones.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Estructuración IMRyD",
+        "temas": [
+          "Introducción y justificación del vacío de conocimiento",
+          "Diseño metodológico riguroso",
+          "Redacción de resultados y tablas"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Envío y Revisión por Pares",
+        "temas": [
+          "Selección de revista Q1, Q2 o Q3",
+          "Carta al editor (Cover letter)",
+          "Respuesta a revisores (Peer review)"
+        ]
+      }
+    ]
   },
   {
     "id": 3,
-    "nombre": "Monografías y Ensayos de Pregrado",
-    "categoria": "Redacción Académica",
-    "precio": 120,
-    "nuevo": false,
+    "nombre": "Diseño y Validación de Instrumentos Psicométricos",
+    "categoria": "Psicometría",
+    "precio": 300,
+    "nuevo": true,
+    "destacado": true,
     "disponible": true,
+    "nivel": "Intermedio - Avanzado",
+    "horas": 30,
     "imagen": "/favicon.svg",
-    "descripcion": "Estructuración lógica, búsqueda en bases de datos académicas confiables y argumentación crítica."
+    "descripcion": "Construcción de cuestionarios y escalas psicológicas, validez de contenido por criterio de jueces y aplicación de prueba piloto.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Construcción del Instrumento",
+        "temas": [
+          "Definición conceptual y dimensiones",
+          "Redacción de ítems y escala Likert",
+          "Formato para validación de jueces expertos"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Evidencias de Validez",
+        "temas": [
+          "Cálculo de V de Aiken",
+          "Aplicación de muestra piloto",
+          "Ajuste semántico y estructural de ítems"
+        ]
+      }
+    ]
   },
   {
     "id": 4,
-    "nombre": "Adaptación y Revisión de Normas APA 7",
-    "categoria": "Estilo y Formato",
-    "precio": 80,
-    "nuevo": false,
+    "nombre": "Análisis Psicométrico y Estadístico (RStudio, Jamovi y SPSS)",
+    "categoria": "Análisis de Datos",
+    "precio": 250,
+    "nuevo": true,
+    "destacado": false,
     "disponible": true,
+    "nivel": "Intermedio",
+    "horas": 28,
     "imagen": "/favicon.svg",
-    "descripcion": "Corrección exhaustiva de citas en texto, lista de referencias, formato de tablas, figuras y márgenes."
+    "descripcion": "Procesamiento de bases de datos, confiabilidad (Alfa de Cronbach y Omega de McDonald), análisis factorial e interpretación en APA 7.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Estadística y Confiabilidad",
+        "temas": [
+          "Limpieza de base de datos y supuestos de normalidad",
+          "Consistencia interna (Alfa y Omega)",
+          "Pruebas de correlación y regresión"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Análisis Factorial en RStudio y Jamovi",
+        "temas": [
+          "Análisis Factorial Exploratorio (AFE)",
+          "Análisis Factorial Confirmatorio (AFC) e índices de ajuste",
+          "Redacción e interpretación de tablas en APA 7"
+        ]
+      }
+    ]
   },
   {
     "id": 5,
@@ -45,38 +129,72 @@
     "categoria": "Nivelación Universitaria",
     "precio": 60,
     "nuevo": false,
+    "destacado": false,
     "disponible": true,
+    "nivel": "Básico - Intermedio",
+    "horas": 16,
     "imagen": "/favicon.svg",
-    "descripcion": "Clases personalizadas de refuerzo para exámenes parciales, finales y comprensión de lecturas complejas."
+    "descripcion": "Clases personalizadas de refuerzo para exámenes parciales y finales en cursos de psicología, humanidades y estadística.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Fundamentos y Teoría",
+        "temas": [
+          "Repaso de lecturas obligatorias del sílabo",
+          "Resolución de casos prácticos y clínicos"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Práctica Calificada",
+        "temas": ["Simulacro de examen", "Retroalimentación personalizada"]
+      }
+    ]
   },
   {
     "id": 6,
-    "nombre": "Diseño y Validación de Instrumentos Psicométricos",
-    "categoria": "Psicometría",
-    "precio": 300,
-    "nuevo": true,
+    "nombre": "Monografías, Ensayos y Adaptación a Normas APA 7",
+    "categoria": "Redacción y Estilo",
+    "precio": 100,
+    "nuevo": false,
+    "destacado": false,
     "disponible": true,
+    "nivel": "Básico",
+    "horas": 12,
     "imagen": "/favicon.svg",
-    "descripcion": "Armado de cuestionarios y escalas, matriz operacional, validez de contenido por criterio de jueces y piloto."
+    "descripcion": "Estructuración lógica de ensayos de pregrado y corrección exhaustiva de citas, referencias, tablas y figuras según APA 7.",
+    "modulos": [
+      {
+        "titulo": "Módulo 1: Búsqueda y Argumentación",
+        "temas": [
+          "Búsqueda en Scopus, SciELO y Redalyc",
+          "Redacción de introducción, desarrollo y conclusiones"
+        ]
+      },
+      {
+        "titulo": "Módulo 2: Normativa APA 7ma Edición",
+        "temas": [
+          "Citas narrativas y parentéticas",
+          "Automatización de referencias y formato de tablas"
+        ]
+      }
+    ]
   },
   {
     "id": 7,
-    "nombre": "Análisis Psicométrico y Estadístico (RStudio, Jamovi y SPSS)",
-    "categoria": "Análisis de Datos",
-    "precio": 250,
-    "nuevo": true,
-    "disponible": true,
-    "imagen": "/favicon.svg",
-    "descripcion": "Procesamiento de datos, confiabilidad (Alfa/Omega), análisis factorial e interpretación de resultados en APA 7."
-  },
-  {
-    "id": 8,
     "nombre": "Seminario Intensivo de Redacción Científica Grupal",
     "categoria": "Talleres",
     "precio": 90,
     "nuevo": false,
+    "destacado": false,
     "disponible": false,
+    "nivel": "General",
+    "horas": 8,
     "imagen": "/favicon.svg",
-    "descripcion": "Taller grupal de fin de semana (Cupos agotados por este mes)."
+    "descripcion": "Taller grupal de fin de semana (Cupos agotados por este mes).",
+    "modulos": [
+      {
+        "titulo": "Módulo Único: Taller Práctico",
+        "temas": ["Redacción en vivo", "Revisión grupal"]
+      }
+    ]
   }
 ]
