@@ -1,0 +1,95 @@
+---
+const platos = [
+  { n: "Café", p: 6 },
+  { n: "Humita", p: 4.5 },
+];
+const abierto = true;
+---
+{/* Componente Menu.astro con los 7 errores corregidos */}
+<section class="menu">
+  <!-- Error 1 y 2 corregidos: class en lugar de className y cierre de <h2> -->
+  <h2>Menú</h2>
+
+  <!-- Error 3 corregido: Expresión con && en lugar de sentencia if -->
+  {abierto && <p class="estado">Abierto</p>}
+
+  <!-- Error 4 corregido: Sin <p> alrededor de <ul> y con Fragment en el map() -->
+  <ul class="lista-platos">
+    {platos.map((x) => (
+      <Fragment>
+        <li>{x.n}</li>
+        <li class="precio">S/ {x.p.toFixed(2)}</li>
+      </Fragment>
+    ))}
+  </ul>
+
+  <!-- Error 5 corregido: Espacio explícito {" "} entre etiquetas en distintas líneas -->
+  <p class="total">
+    <span>Total de opciones:</span>{" "}
+    <strong>{platos.length}</strong>
+  </p>
+
+  <!-- Error 6 corregido: Botón con id para escucharlo desde <script> -->
+  <button id="btn-pedir" class="btn">Pedir</button>
+
+  <!-- Error 7 corregido: Imagen con atributo alt y autocierre -->
+  <img src="/favicon.svg" alt="Menú" width="40" height="40" />
+</section>
+
+<script>
+  const boton = document.getElementById("btn-pedir");
+  if (boton) {
+    boton.addEventListener("click", () => {
+      alert("Pedido");
+    });
+  }
+</script>
+
+<style>
+  .menu {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(1, 51, 102, 0.08);
+    border-top: 4px solid #013366;
+  }
+  h2 {
+    color: #013366;
+    margin-top: 0;
+  }
+  .estado {
+    display: inline-block;
+    background: #71e7b6;
+    color: #013366;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    margin: 0 0 1rem 0;
+  }
+  .lista-platos {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0.5rem 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    border-bottom: 1px solid #edf2f7;
+    padding-bottom: 1rem;
+  }
+  .precio {
+    font-weight: bold;
+    color: #013366;
+  }
+  .btn {
+    background: #013366;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+</style>
