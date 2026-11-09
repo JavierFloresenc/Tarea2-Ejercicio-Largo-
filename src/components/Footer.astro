@@ -1,0 +1,25 @@
+---
+const anio = new Date().getFullYear();
+const redes = [
+  { nombre: "WhatsApp Académico", url: "#" },
+  { nombre: "Instagram", url: "#" },
+  { nombre: "LinkedIn", url: "#" },
+];
+---
+{/* Footer con año dinámico y redes generadas con map() */}
+<footer id="contacto" class="footer">
+  <p>Guía Académica · Especialistas en Psicología, Humanidades y Psicometría (Lima, Perú)</p>
+  <div class="redes">
+    {redes.map((r) => (
+      <a href={r.url}>{r.nombre}</a>
+    ))}
+  </div>
+  <p class="copy">© {anio} Guía Académica. Todos los derechos reservados.</p>
+</footer>
+
+<style>
+  .footer { background-color: #013366; color: white; text-align: center; padding: 2rem; margin-top: 3rem; }
+  .redes { display: flex; justify-content: center; gap: 1.5rem; margin: 1rem 0; }
+  .redes a { color: #71e7b6; text-decoration: none; font-weight: bold; }
+  .copy { font-size: 0.85rem; color: #cbd5e0; margin: 0; }
+</style>

@@ -1,0 +1,30 @@
+---
+const enlaces = [
+  { texto: "Inicio", url: "/" },
+  { texto: "Servicios Académicos", url: "#servicios" },
+  { texto: "Psicometría y Datos", url: "#servicios" },
+  { texto: "Contacto", url: "#contacto" },
+];
+---
+{/* Comentario privado Requisito 5: Header de Guía Académica con menú generado por map() */}
+<header class="cabecera">
+  <div class="contenedor">
+    <a href="/" class="logo">🎓 Guía Académica</a>
+    <nav>
+      <ul class="menu">
+        {enlaces.map((e) => (
+          <li><a href={e.url}>{e.texto}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .cabecera { background-color: #013366; color: white; padding: 1rem 2rem; border-bottom: 4px solid #71e7b6; }
+  .contenedor { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+  .logo { color: white; text-decoration: none; font-weight: bold; font-size: 1.3rem; }
+  .menu { display: flex; gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+  .menu a { color: white; text-decoration: none; font-weight: 600; }
+  .menu a:hover { color: #71e7b6; }
+</style>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Asesoría Integral de Tesis (Pregrado y Maestría)",
+    "categoria": "Investigación",
+    "precio": 350,
+    "nuevo": false,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Acompañamiento metodológico personalizado desde el planteamiento del problema hasta la sustentación final."
+  },
+  {
+    "id": 2,
+    "nombre": "Asesoría en Artículos Científicos (Q1, Q2 y Q3)",
+    "categoria": "Publicación Científica",
+    "precio": 480,
+    "nuevo": true,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Redacción científica, adaptación a revistas indexadas (Scopus/WoS) y levantamiento de observaciones de pares."
+  },
+  {
+    "id": 3,
+    "nombre": "Monografías y Ensayos de Pregrado",
+    "categoria": "Redacción Académica",
+    "precio": 120,
+    "nuevo": false,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Estructuración lógica, búsqueda en bases de datos académicas confiables y argumentación crítica."
+  },
+  {
+    "id": 4,
+    "nombre": "Adaptación y Revisión de Normas APA 7",
+    "categoria": "Estilo y Formato",
+    "precio": 80,
+    "nuevo": false,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Corrección exhaustiva de citas en texto, lista de referencias, formato de tablas, figuras y márgenes."
+  },
+  {
+    "id": 5,
+    "nombre": "Tutorías en Psicología, Humanidades y Psicometría",
+    "categoria": "Nivelación Universitaria",
+    "precio": 60,
+    "nuevo": false,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Clases personalizadas de refuerzo para exámenes parciales, finales y comprensión de lecturas complejas."
+  },
+  {
+    "id": 6,
+    "nombre": "Diseño y Validación de Instrumentos Psicométricos",
+    "categoria": "Psicometría",
+    "precio": 300,
+    "nuevo": true,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Armado de cuestionarios y escalas, matriz operacional, validez de contenido por criterio de jueces y piloto."
+  },
+  {
+    "id": 7,
+    "nombre": "Análisis Psicométrico y Estadístico (RStudio, Jamovi y SPSS)",
+    "categoria": "Análisis de Datos",
+    "precio": 250,
+    "nuevo": true,
+    "disponible": true,
+    "imagen": "/favicon.svg",
+    "descripcion": "Procesamiento de datos, confiabilidad (Alfa/Omega), análisis factorial e interpretación de resultados en APA 7."
+  },
+  {
+    "id": 8,
+    "nombre": "Seminario Intensivo de Redacción Científica Grupal",
+    "categoria": "Talleres",
+    "precio": 90,
+    "nuevo": false,
+    "disponible": false,
+    "imagen": "/favicon.svg",
+    "descripcion": "Taller grupal de fin de semana (Cupos agotados por este mes)."
+  }
+]

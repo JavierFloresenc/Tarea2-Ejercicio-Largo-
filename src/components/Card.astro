@@ -1,0 +1,24 @@
+---
+const { nombre, categoria, precio, nuevo, descripcion, imagen } = Astro.props;
+---
+{/*  Tarjeta de servicio con insignia condicional && */}
+<article class="card">
+  <div class="card-top">
+    <img src={imagen} alt={nombre} width="36" height="36" />
+    {nuevo && <span class="insignia">Especialidad</span>}
+  </div>
+  <span class="categoria">{categoria}</span>
+  <h3>{nombre}</h3>
+  <p class="desc">{descripcion}</p>
+  <p class="precio"><span>Desde:</span>{" "}<strong>S/ {precio.toFixed(2)}</strong></p>
+</article>
+
+<style>
+  .card { background: white; border-radius: 8px; padding: 1.5rem; border-top: 4px solid #013366; box-shadow: 0 4px 10px rgba(0,0,0,0.08); display: flex; flex-direction: column; justify-content: space-between; }
+  .card-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.8rem; }
+  .insignia { background-color: #71e7b6; color: #013366; font-size: 0.75rem; font-weight: bold; padding: 0.2rem 0.6rem; border-radius: 4px; text-transform: uppercase; }
+  .categoria { color: #024b94; font-size: 0.8rem; font-weight: bold; text-transform: uppercase; }
+  h3 { color: #013366; margin: 0.4rem 0; font-size: 1.2rem; }
+  .desc { color: #4a5568; font-size: 0.95rem; line-height: 1.4; }
+  .precio { color: #013366; font-size: 1.05rem; margin: 1rem 0 0 0; border-top: 1px solid #eee; padding-top: 0.8rem; }
+</style>
